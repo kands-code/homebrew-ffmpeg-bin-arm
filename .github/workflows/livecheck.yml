@@ -2,20 +2,20 @@ name: Homebrew Livecheck
 
 on:
   schedule:
-  - cron: 0 0 * * *
+    - cron: 0 0 * * *
   workflow_dispatch:
 
 jobs:
   livecheck:
     runs-on: macos-latest
-    
-    steps: 
-    - name: Checkout Repo
-      uses: actions/checkout@v3
 
-    - name: Update Homebrew Casks
-      uses: macauley/action-homebrew-bump-cask@v1
-      with:
-        token: ${{ secrets.HOMEBREW_TOKEN }}
-        tap: nepherte/ffmpeg
-        livecheck: true
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Update Homebrew Casks
+        uses: macauley/action-homebrew-bump-cask@v1
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          tap: kands-code/ffmpeg-bin-arm
+          livecheck: true
