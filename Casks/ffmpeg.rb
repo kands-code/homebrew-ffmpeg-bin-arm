@@ -1,8 +1,8 @@
 cask "ffmpeg" do
-  version "7.0"
-  sha256 "563111a239fe70d2e5c84a5382204a7d0bf0a332385a92a44baff36d313e27f2"
+  version "7.1"
+  sha256 "6d175a4743ca50256e89a8cdd731100f9cee33bd79aeea46894d209410dc6617"
 
-  url "https://www.osxexperts.net/ffmpeg#{version.major}arm.zip", verified: "osxexperts.net/"
+  url "https://www.osxexperts.net/ffmpeg#{version.major}#{version.minor}arm.zip", verified: "osxexperts.net/"
   name "ffmpeg"
   desc "Complete, cross-patform solution to convert audio and video"
   homepage "https://ffmpeg.org/"
