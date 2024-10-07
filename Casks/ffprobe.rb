@@ -1,6 +1,6 @@
 cask "ffprobe" do
-  version "7.1"
-  sha256 "df2684842eca145bd72f4724ce9cecbf38558a4d64b2aef7846680f877702baa"
+  version "71"
+  sha256 "156a2c4da546e7d86877dd204df026eeda79aee8a80af8f04cd00f9b02687aa0"
 
   url "https://www.osxexperts.net/ffprobe#{version.major}#{version.minor}arm.zip", verified: "osxexperts.net/"
   name "ffprobe"
