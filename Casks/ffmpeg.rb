@@ -1,6 +1,6 @@
 cask "ffmpeg" do
   version "7.1"
-  sha256 "6d175a4743ca50256e89a8cdd731100f9cee33bd79aeea46894d209410dc6617"
+  sha256 "0878f3313311c2c1b2c818e7c955c0bd828c97b357fa86211b42a5c36d01e36f"
 
   url "https://www.osxexperts.net/ffmpeg#{version.major}#{version.minor}arm.zip", verified: "osxexperts.net/"
   name "ffmpeg"
