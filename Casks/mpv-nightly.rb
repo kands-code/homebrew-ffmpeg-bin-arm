@@ -1,4 +1,4 @@
-cask "mpv-arm-nightly" do
+cask "mpv-nightly" do
   version "nightly"
 
   macos_version = MacOS.version.to_s.split('.').first.to_i
