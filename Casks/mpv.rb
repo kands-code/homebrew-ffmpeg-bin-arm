@@ -5,19 +5,17 @@ cask "mpv" do
 
   url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-#{macos_version}-arm.zip"
   sha256 :no_check
+  depends_on macos: ">= :sonoma"
+  
   name "mpv"
   desc "a free, open source, and cross-platform media player"
   homepage "https://mpv.io/"
-  
   livecheck do
     url "https://nightly.link/mpv-player/mpv/workflows/build/master/"
     regex(/href=.*?mpv-macos-(\d+)-arm\.zip/i)
   end
-  
-  depends_on macos: ">= :sonoma"
 
-  binary "mpv"
-
+  app 'mpv.app'
   conflicts_with cask: [ 'stolendata-mpv' ]
 
   caveats <<~EOS
