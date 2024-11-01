@@ -16,6 +16,7 @@ cask "mpv-nightly" do
   end
 
   app "mpv.app"
+  binary "#{appdir}/mpv.app/Contents/MacOS/mpv"
   conflicts_with cask: [ 'stolendata-mpv' ]
 
   caveats <<~EOS
