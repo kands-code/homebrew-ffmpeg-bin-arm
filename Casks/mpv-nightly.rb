@@ -22,13 +22,11 @@ cask "mpv-nightly" do
     For macOS 10.15 (Catalina) or higher you need to remove the file from quarantine.
     You can do this in the Terminal:
     
-      xattr -cr #{appdir}/mpv.app && codesign -s - #{appdir}/mpv.app
+      xattr -cr #{appdir}/mpv.app
 
     For Nushell:
 
-      do --capture-errors {
-        ^xattr -cr #{appdir}/mpv.app
-      } | ^codesign -s - #{appdir}/mpv.app
+      ^xattr -cr #{appdir}/mpv.app      
   EOS
 end
   
