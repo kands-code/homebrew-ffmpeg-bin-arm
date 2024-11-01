@@ -15,20 +15,20 @@ cask "mpv" do
     regex(/href=.*?mpv-macos-(\d+)-arm\.zip/i)
   end
 
-  app 'mpv.app'
+  app "{token}.app"
   conflicts_with cask: [ 'stolendata-mpv' ]
 
   caveats <<~EOS
     For macOS 10.15 (Catalina) or higher you need to remove the file from quarantine.
     You can do this in the Terminal:
     
-      xattr -cr #{staged_path}/#{token} && codesign -s - #{staged_path}/#{token}
+      xattr -cr #{appdir}/#{token}.app && codesign -s - #{appdir}/#{token}.app
 
     For Nushell:
 
       do --capture-errors {
-        ^xattr -cr #{staged_path}/#{token}
-      } | ^codesign -s - #{staged_path}/#{token}
+        ^xattr -cr #{appdir}/#{token}.app
+      } | ^codesign -s - #{appdir}/#{token}.app
   EOS
 end
   
