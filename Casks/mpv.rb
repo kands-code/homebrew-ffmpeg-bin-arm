@@ -3,7 +3,7 @@ cask "mpv" do
 
   macos_version = MacOS.version.to_s.split('.').first.to_i
 
-  url 'https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-#{macos_version}-arm.zip'
+  url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-#{macos_version}-arm.zip"
   sha256 :no_check
   name "mpv"
   desc "a free, open source, and cross-platform media player"

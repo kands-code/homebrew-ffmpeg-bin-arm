@@ -16,6 +16,7 @@ An overview of the available packages in this homebrew tap:
 | ffmpeg  |   7.1   | :white_check_mark: |
 | ffplay  |   7.1   | :white_check_mark: |
 | ffprobe |   7.1   | :white_check_mark: |
+|   mpv   | nightly | :white_check_mark: |
 
 ## FAQ
 
