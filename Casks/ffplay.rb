@@ -1,6 +1,6 @@
 cask "ffplay" do
   version "7.1.1"
-  sha256 "cdece173efc7802f847b23b7fdced9910c36ba9c02d608c46a620a7e4ef3fff3"
+  sha256 "a29c1a22763b7eae295f264690130e5f1d6fc1b21addd6277e55099d309a0ae2"
 
   url "https://www.osxexperts.net/ffplay#{version.no_dots}arm.zip", verified: "osxexperts.net/"
   name "ffplay"
