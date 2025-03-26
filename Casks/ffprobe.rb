@@ -1,8 +1,8 @@
 cask "ffprobe" do
-  version "7.1"
-  sha256 "156a2c4da546e7d86877dd204df026eeda79aee8a80af8f04cd00f9b02687aa0"
+  version "7.1.1"
+  sha256 "ae77d6751f4db81098a11dcc966a8d098925411430169475c8f8a7bfad76188b"
 
-  url "https://www.osxexperts.net/ffprobe#{version.major}#{version.minor}arm.zip", verified: "osxexperts.net/"
+  url "https://www.osxexperts.net/ffprobe#{version.no_dots}arm.zip", verified: "osxexperts.net/"
   name "ffprobe"
   desc "Complete, cross-patform solution to convert audio and video"
   homepage "https://ffmpeg.org/"
