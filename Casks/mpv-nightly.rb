@@ -11,8 +11,8 @@ cask "mpv-nightly" do
   desc "a free, open source, and cross-platform media player"
   homepage "https://mpv.io/"
   livecheck do
-    url "https://nightly.link/mpv-player/mpv/workflows/build/master/"
-    regex(/href=.*?mpv-macos-(\d+)-arm\.zip/i)
+    url :url
+    strategy :header_match
   end
 
   app "mpv.app"
