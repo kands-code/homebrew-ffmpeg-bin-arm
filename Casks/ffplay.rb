@@ -1,6 +1,6 @@
 cask "ffplay" do
-  version "7.1.1"
-  sha256 "a29c1a22763b7eae295f264690130e5f1d6fc1b21addd6277e55099d309a0ae2"
+  version "8.0"
+  sha256 "e12ed3ca31efdc32b56e3b5c0de78ff939423272a1f88d86ab7c11f8e52791f9"
 
   url "https://www.osxexperts.net/ffplay#{version.no_dots}arm.zip", verified: "osxexperts.net/"
   name "ffplay"
@@ -19,7 +19,7 @@ cask "ffplay" do
   caveats <<~EOS
     For macOS 10.15 (Catalina) or higher you need to remove the file from quarantine.
     You can do this in the Terminal:
-    
+
       xattr -cr #{staged_path}/#{token} && codesign -s - #{staged_path}/#{token}
 
     For Nushell:
