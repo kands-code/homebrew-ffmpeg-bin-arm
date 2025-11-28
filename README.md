@@ -20,11 +20,11 @@ An overview of the available packages in this homebrew tap:
 
 ## FAQ
 
-#### Where are the binaries coming from?
+### Where are the binaries coming from?
 
 The binaries are taken from [osxexperts.net](https://www.osxexperts.net/).
 
-#### What options are used to compile the binaries?
+### What options are used to compile the binaries?
 
 This is extensively documented at [osxexperts.net](https://www.osxexperts.net/).
 
