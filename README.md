@@ -11,12 +11,12 @@ To install a package contained in this homebrew tap, run the commands:
 
 An overview of the available packages in this homebrew tap:
 
-| Package | Version |       arm64        |
-| :-----: | :-----: | :----------------: |
-| ffmpeg  |   8.0   | :white_check_mark: |
-| ffplay  |   8.0   | :white_check_mark: |
-| ffprobe |   8.0   | :white_check_mark: |
-|   mpv   | nightly | :white_check_mark: |
+| Package |   Version   |       arm64        |
+| :-----: | :---------: | :----------------: |
+| ffmpeg  |     8.0     | :white_check_mark: |
+| ffplay  |     8.0     | :white_check_mark: |
+| ffprobe |     8.0     | :white_check_mark: |
+|   mpv   | v0.41.0-dev | :white_check_mark: |
 
 ## FAQ
 

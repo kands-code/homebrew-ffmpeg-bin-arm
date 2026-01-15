@@ -1,9 +1,8 @@
 cask "mpv-nightly" do
-  version "nightly"
+  version "v0.41.0-dev-g2007f5543-20978304864"
+  macos_version = MacOS.version.major.to_i
 
-  macos_version = [MacOS.version.to_s.split('.').first.to_i, 15].min # no builds for macOS 26
-
-  url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-#{macos_version}-arm.zip"
+  url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-#{version}-macos-#{macos_version}-arm.zip"
   sha256 :no_check
   depends_on macos: ">= :sonoma"
 
@@ -11,8 +10,12 @@ cask "mpv-nightly" do
   desc "a free, open source, and cross-platform media player"
   homepage "https://mpv.io/"
   livecheck do
-    url :url
-    strategy :header_match
+    url "https://nightly.link/mpv-player/mpv/workflows/build/master"
+    strategy :page_match do |page|
+      match = page.match(/mpv-v?(\d+\.\d+\.\d+-dev-g[a-f0-9]+-\d+)-macos-#{macos_version}-arm\.zip/i)
+      next if match.blank?
+      match[1]
+    end
   end
 
   app "mpv.app"
