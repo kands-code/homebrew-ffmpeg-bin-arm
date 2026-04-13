@@ -1,6 +1,6 @@
 cask "ffplay" do
-  version "8.0"
-  sha256 "e12ed3ca31efdc32b56e3b5c0de78ff939423272a1f88d86ab7c11f8e52791f9"
+  version "8.1"
+  sha256 "f6571673bf4dc06b216212ca88950cac789698a014289c366cdb93800557c353"
 
   url "https://www.osxexperts.net/ffplay#{version.no_dots}arm.zip", verified: "osxexperts.net/"
   name "ffplay"

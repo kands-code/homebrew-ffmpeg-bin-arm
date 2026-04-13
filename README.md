@@ -4,19 +4,20 @@ Homebrew tap containing static FFmpeg binaries for macOS.
 
 To install a package contained in this homebrew tap, run the commands:
 
-    brew tap kands-code/ffmpeg-bin-arm
-    brew install --cask kands-code/ffmpeg-bin-arm/<package>
+```console
+> brew tap kands-code/ffmpeg-bin-arm
+> brew install --cask kands-code/ffmpeg-bin-arm/<package>
+```
 
 ## Packages
 
 An overview of the available packages in this homebrew tap:
 
-| Package |   Version   |       arm64        |
-| :-----: | :---------: | :----------------: |
-| ffmpeg  |     8.0     | :white_check_mark: |
-| ffplay  |     8.0     | :white_check_mark: |
-| ffprobe |     8.0     | :white_check_mark: |
-|   mpv   | v0.41.0-dev | :white_check_mark: |
+| Package | Version |       arm64        |
+| :-----: | :-----: | :----------------: |
+| ffmpeg  |   8.1   | :white_check_mark: |
+| ffplay  |   8.1   | :white_check_mark: |
+| ffprobe |   8.1   | :white_check_mark: |
 
 ## FAQ
 
