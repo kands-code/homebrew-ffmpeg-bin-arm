@@ -12,7 +12,7 @@ cask "ffprobe" do
     regex(/href=.*?ffprobe(\d+)arm\.zip/i)
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   binary "ffprobe"
 

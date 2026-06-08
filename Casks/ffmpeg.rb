@@ -12,7 +12,7 @@ cask "ffmpeg" do
     regex(/href=.*?ffmpeg(\d+)arm\.zip/i)
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   binary "ffmpeg"
 
