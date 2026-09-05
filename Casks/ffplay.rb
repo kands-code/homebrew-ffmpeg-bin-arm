@@ -2,7 +2,7 @@ cask "ffplay" do
   version "9"
   sha256 "3612c4dafab7eee4c99631e621ff0c4cef450dca9af6c8c880d2591a9a83cac7"
 
-  url "https://www.osxexperts.net/ffplay#{version.no_dots}arm.zip", verified: "osxexperts.net/"
+  url "https://www.osxexperts.net/ffplay#{version.no_dots}arm.zip"
   name "ffplay"
   desc "Complete, cross-patform solution to convert audio and video"
   homepage "https://ffmpeg.org/"
